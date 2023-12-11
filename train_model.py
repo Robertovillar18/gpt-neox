@@ -2,6 +2,28 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 
+import os
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:64"
+
+import torch
+from GPUtil import showUtilization as gpu_usage
+from numba import cuda
+
+def free_gpu_cache():
+    print("Initial GPU Usage")
+    gpu_usage()                             
+
+    torch.cuda.empty_cache()
+
+    cuda.select_device(0)
+    cuda.close()
+    cuda.select_device(0)
+
+    print("GPU Usage after emptying the cache")
+    gpu_usage()
+
+free_gpu_cache()  
+
 model_id = "EleutherAI/gpt-neox-20b"
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
