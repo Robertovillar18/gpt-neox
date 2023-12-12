@@ -34,7 +34,7 @@ def generate(input, device):
     return result
 
 # %%
-def main(argv):
+def main(argv, device):
     input = ''
     output = ''
 
@@ -51,10 +51,10 @@ def main(argv):
             output = arg
 
     if input != '':
-        generated = generate(input)
+        generated = generate(input, device)
         print(generated)
 
 if __name__ == "__main__":
-   main(sys.argv[1:])
+   main(sys.argv[1:], device)
 
 
