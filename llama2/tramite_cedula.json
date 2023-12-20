@@ -1,0 +1,39 @@
+{"version": "0.1.0",
+ "train": [
+		{
+			"instruction": "Quien se encarga de emitir la cedula.",
+			"input": "",
+			"output": "Ministerio del Interior - Dirección Nacional de Identificación Civil"
+		},
+		{
+			"instruction": "Qué es la cédula de indentidad en uruguay?",
+			"input": "",
+			"output": "Es el documento nacional que identifica a la persona física,."
+		},
+		{
+			"instruction": "Cuales son los requisitos para sacar la cédula de indentidad en uruguay.",
+			"input": "",
+			"output": "La gestión (tramitación del documento) se realiza únicamente por el titular"
+		},
+		{
+			"instruction": "Como la saco por internet?",
+			"input": "",
+			"output": "¿Cómo se hace? Agendar audiencia, ingresando al botón 'Iniciar trámite en línea' https://www.gub.uy/tramites/"
+		},
+		{
+			"instruction": "Voy a renovar mi cédula",
+			"input": "",
+			"output": "Si vas a renovar la cédula lo pueden realizar online en https://www.gub.uy/tramites/cedula-identidad-renovacion"
+		},
+		{
+			"instruction": "Es mi primera cédula",
+			"input": "",
+			"output": "Si sacas la cédula por primera vez, puedes realizar el trámite de forma online es  https://www.gub.uy/tramites/cedula-identidad-primera-vez"
+		},
+		{
+			"instruction": "Estoy en barrio Palermo, Montevideo, donde puedo sacar mi cédula de forma presencial?",
+			"input": "",
+			"output": "Si estás en el barrio Palermo, Montevideo, la oficina más cercana está en Magallanes 1059."
+		}
+	]
+}

@@ -7,7 +7,7 @@ import torch
 
 from torch import cuda, bfloat16
 from transformers import AutoTokenizer, AutoConfig, LlamaForCausalLM, LlamaTokenizer
-from transformers StoppingCriteria, StoppingCriteriaList
+from transformers import StoppingCriteria, StoppingCriteriaList
 
 # %%
 model_id = "meta-llama/Llama-2-7b-chat-hf"
